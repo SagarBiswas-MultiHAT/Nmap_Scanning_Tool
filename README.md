@@ -85,16 +85,6 @@ Running scan with open port filtering...
 ...
 ```
 
-## Code Walkthrough
-
-The script is structured as follows:
-
-1. **Banner Display**: The script starts with a stylish banner using `pyfiglet` and colors the text with `termcolor`.
-2. **Root Check**: It checks if the script is running with root privileges. If not, it exits with a helpful error message.
-3. **User Input**: The user is prompted to input the target IP, port(s), and scan type.
-4. **Nmap Command Construction**: Based on the selected scan type, the corresponding Nmap command is created.
-5. **Scan Execution**: The scan is executed, and results are displayed. Optionally, only open ports are shown.
-
 ## Contributing
 
 Feel free to contribute! If you'd like to add new features, improve existing functionality, or fix bugs, please open an issue or submit a pull request.
