@@ -3,10 +3,10 @@
 Interactive wrapper around Nmap that makes common scans quick to run and easy to read. It prints a banner, asks for a target and ports, lets you choose a scan type (SYN, Aggressive, OS Detect, NSE vuln checks, and more), and can optionally show only the lines that contain open ports.
 
 > Note: This tool executes the local `nmap` binary. You must have Nmap installed and available on your PATH.
-### A). ---------------------------------------------------------------
+### A). -------------------------------------------------------------------------------------------------------------------
 ![Nmap Scanning Tool](https://imgur.com/GHvPuD6.jpg)
 
-### B). ---------------------------------------------------------------
+### B). -------------------------------------------------------------------------------------------------------------------
 ![Nmap Scanning Tool](https://imgur.com/zejtHl3.jpg)
 
 ## Features
