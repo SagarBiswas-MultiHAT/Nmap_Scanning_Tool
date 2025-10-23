@@ -6,6 +6,8 @@ Interactive wrapper around Nmap that makes common scans quick to run and easy to
 ### A). -------------------------------------------------------------------------------------------------------------------
 ![Nmap Scanning Tool](https://imgur.com/GHvPuD6.jpg)
 <br>
+<br>
+<br>
 
 ### B). -------------------------------------------------------------------------------------------------------------------
 ![Nmap Scanning Tool](https://imgur.com/zejtHl3.jpg)
