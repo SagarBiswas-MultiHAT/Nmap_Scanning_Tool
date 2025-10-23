@@ -4,8 +4,8 @@ Interactive wrapper around Nmap that makes common scans quick to run and easy to
 
 > Note: This tool executes the local `nmap` binary. You must have Nmap installed and available on your PATH.
 
-![Nmap Scanning Tool](https://imgur.com/GHvPuD6)
-![Nmap Scanning Tool](https://imgur.com/zejtHl3)
+![Nmap Scanning Tool](https://imgur.com/GHvPuD6.jpg)
+![Nmap Scanning Tool](https://imgur.com/zejtHl3.jpg)
 
 ## Features
 
