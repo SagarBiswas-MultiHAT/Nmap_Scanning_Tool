@@ -5,14 +5,11 @@ import sys
 import shlex
 import shutil
 
-import pyfiglet
 from termcolor import colored
+from nmap_utils import display_banner, get_target_info, choose_scan_type
 
-# Display a banner using pyfiglet and termcolor
-banner = colored(pyfiglet.figlet_format("Nmap Scanning Tool"), "green")
-print(banner)
-print(colored("\n******************** Welcome to the Nmap Scanning Tool ********************", "cyan"))
-print(colored("************************** Created By Sagar Biswas ************************\n", "red"))
+# Display the banner
+display_banner()
 
 def check_root():
     """Check if the script is run with elevated privileges when required."""
@@ -115,40 +112,6 @@ def run_scan(command, show_only_open_ports=False):
         print(stderr)
 
     return True
-
-def get_target_info():
-    """Get target IP and port info."""
-    ip_address = input("\nEnter the IP address to scan: ").strip()
-
-    # Get port or range
-    port = input("Enter the port (1-65535) or range (e.g., 1-1000) [Leave blank for all ports]: ").strip()
-    if not port:
-        port = "1-65535"
-    
-    return ip_address, port
-
-def choose_scan_type():
-    """Let the user select a scan type."""
-    print("\nSelect the scan type:")
-    print("1. SYN Scan (Stealth Scan)")
-    print("2. Aggressive Scan (OS detection + Services)")
-    print("3. Service Version Detection Scan")
-    print("4. Vulnerability Scanning")
-    print("5. Heartbleed Test (SSL/TLS Vulnerability)")
-    print("6. HTTP Security Headers Scan")
-    print("7. SQL Injection Test")
-    print("8. SMB Vulnerability Scan")
-    print("9. SSL/TLS Cipher Suite Scan")
-    print("10. Service Discovery with Nmap Scripting Engine")
-    print("11. OS Detection")
-    print("12. Custom Scan (Specify Nmap arguments)")
-
-    scan_type = input("\nEnter your choice (1-12): ").strip()
-    if scan_type not in [str(i) for i in range(1, 13)]:
-        print("Invalid choice. Exiting.")
-        sys.exit(1)
-
-    return scan_type
 
 def construct_nmap_command(scan_type, ip_address, port):
     """Create the Nmap command based on selected scan type."""
